@@ -1,3 +1,8 @@
+<?php
+include __DIR__ . "/db.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,6 +16,21 @@
         <?php
         include __DIR__ . "/header.php";
         ?>
-        <main></main>
+        <main>
+            <section>
+            <?php foreach($database as $data) { ?>
+                <div class="card">
+                    <div class="container_img">
+                        <img src="<?php echo $data['poster']; ?>" alt="">
+                    </div>
+                    <div class="container_info">
+                        <h3 class="title"><?php echo $data['author'] ?></h3>
+                        <p><?php echo $data['title'] ?></p>
+                        <p><?php echo $data['year'] ?></p>
+                    </div>      
+                </div>
+            <?php } ?>    
+            </section>
+        </main>
     </body>
 </html>
