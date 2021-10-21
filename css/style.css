@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #2E3A46;
+    height: 4.125rem;
+    width: 100%;
+}
+
+.container_logo{
+    height: 100%;
+    
+}
+.container_logo > img{
+    height: 100%;
+    padding: .625rem;
+}
+
+/* img{
+    height: 100%;
+    padding: .625rem;
+} */
+header{
+    display: flex;
+    justify-content: space-between;
+}
