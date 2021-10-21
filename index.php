@@ -24,8 +24,8 @@ include __DIR__ . "/db.php";
                         <img src="<?php echo $data['poster']; ?>" alt="">
                     </div>
                     <div class="container_info">
-                        <h3 class="title"><?php echo $data['author'] ?></h3>
-                        <p><?php echo $data['title'] ?></p>
+                        <h3 class="title"><?php echo $data['title'] ?></h3>
+                        <p><?php echo $data['author'] ?></p>
                         <p><?php echo $data['year'] ?></p>
                     </div>      
                 </div>
